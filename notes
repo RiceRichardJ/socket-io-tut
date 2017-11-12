@@ -1,0 +1,33 @@
+# The tutorial we'll be following
+https://socket.io/get-started/chat/
+
+# Setup git (see .gitignore too)
+git init
+git add .
+git commit -m "first commit"
+
+# Create new branch, switch to branch, push
+git checkout -b richard
+git checkout richard
+git push origin richard
+
+# Change User
+git config --global user.name "ricerichardj"
+git config --global user.name
+git config --global user.email "ricerichardj@gmail.com"
+git config --global user.email
+
+# Various push commands
+git branch
+git checkout richard
+git add .
+git status
+git commit -m "$1"
+git push origin richard
+git log --graph --oneline --all
+
+#git reset --hard HEAD
+#git clean -f -d
+#git pull origin richard
+
+
