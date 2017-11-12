@@ -5,6 +5,8 @@ https://socket.io/get-started/chat/
 git init
 git add .
 git commit -m "first commit"
+git remote add origin <GITHUB-URL>
+git push origin master
 
 # Create new branch, switch to branch, push
 git checkout -b richard
@@ -26,8 +28,15 @@ git commit -m "$1"
 git push origin richard
 git log --graph --oneline --all
 
-#git reset --hard HEAD
-#git clean -f -d
-#git pull origin richard
+# Undo commit
+git reset --hard HEAD
 
+# Remove all added files; pull from repo
+git clean -f -d
+git pull origin richard
+
+# Removing a file from repo
+git rm file1.txt
+git commit -m "remove file1.txt"
+git push origin master
 
